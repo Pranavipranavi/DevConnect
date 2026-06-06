@@ -1,0 +1,74 @@
+{
+  "url": "http://127.0.0.1:5173/register",
+  "title": "Create Account | DevConnect",
+  "snapshot": "DC\nDevConnect\nSearch articles\nExplore\nLogin\nStart Writing\nStart Writing\n\nCreate your DevConnect profile and publish your first article.\n\nName\nEmail\nPassword\nCreate Account\n\nAlready registered? Login\n\nDevConnect - Share Knowledge. Build Reputation. Grow Together.\n\nExplore\nWrite\nDashboard",
+  "inputs": [
+    {
+      "type": "text",
+      "placeholder": "Search title, tag, category, author",
+      "value": "",
+      "id": "desktop-search",
+      "name": "",
+      "aria": null
+    },
+    {
+      "type": "text",
+      "placeholder": "",
+      "value": "",
+      "id": "",
+      "name": "",
+      "aria": null
+    },
+    {
+      "type": "email",
+      "placeholder": "",
+      "value": "",
+      "id": "",
+      "name": "",
+      "aria": null
+    },
+    {
+      "type": "password",
+      "placeholder": "",
+      "value": "",
+      "id": "",
+      "name": "",
+      "aria": null
+    }
+  ],
+  "logs": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "verbose",
+      "text": "[DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://goo.gl/9p2vKq) %o"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "responses": []
+}
