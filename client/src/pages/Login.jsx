@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -13,6 +13,7 @@ export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
   const [loading, setLoading] = useState(false);
   const [googleStatus, setGoogleStatus] = useState(import.meta.env.VITE_GOOGLE_CLIENT_ID ? 'loading' : 'unconfigured');
+  const googleInitialized = useRef(false);
   const { login, googleLogin, user } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -26,12 +27,13 @@ export default function Login() {
     if (!clientId) return;
 
     const renderGoogleButton = () => {
-      if (!window.google) return;
+      if (!window.google || googleInitialized.current) return;
+      googleInitialized.current = true;
       window.google.accounts.id.initialize({
         client_id: clientId,
         callback: ({ credential }) => googleLogin(credential).catch((error) => toast.error(error.message))
       });
-      window.google.accounts.id.renderButton(document.getElementById('google-login'), { theme: 'outline', size: 'large', width: '100%' });
+      window.google.accounts.id.renderButton(document.getElementById('google-login'), { theme: 'outline', size: 'large', width: 320 });
       setGoogleStatus('ready');
     };
 

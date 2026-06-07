@@ -1,0 +1,331 @@
+{
+  "stamp": 1780823416939,
+  "startedAt": "2026-06-07T09:10:16.939Z",
+  "screenshots": [
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\auth-register-dashboard.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\blog-detail-cloudinary.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\profile-cloudinary-avatar.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-home-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-dashboard-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-blog-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-create-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-profile-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-admin-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-home-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-dashboard-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-blog-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-create-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-profile-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-admin-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-home-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-dashboard-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-blog-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-create-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-profile-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-admin-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-home-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-dashboard-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-blog-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-create-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-profile-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-admin-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-home-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-dashboard-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-blog-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-create-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-profile-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\production-audit-1780823416939\\responsive-admin-1440.png"
+  ],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+      "type": "error",
+      "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID."
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 403 ()"
+    }
+  ],
+  "networkFailures": [
+    {
+      "url": "https://accounts.google.com/gsi/client",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "config": {
+    "googleClientId": true,
+    "cloudinary": true,
+    "mongo": true,
+    "jwtSecret": true,
+    "clientUrl": "http://127.0.0.1:5173"
+  },
+  "auth": {
+    "register": {
+      "status": "PASS",
+      "detail": "6a25357ca71bf3b5a6d762f8"
+    },
+    "password_hashing": {
+      "status": "PASS",
+      "detail": "password is bcrypt hash"
+    },
+    "logout": {
+      "status": "PASS",
+      "detail": "logout control hidden"
+    },
+    "login": {
+      "status": "PASS",
+      "detail": "JWT saved in localStorage"
+    },
+    "jwt_generation": {
+      "status": "PASS",
+      "detail": "sub=6a25357ca71bf3b5a6d762f8"
+    },
+    "token_refresh": {
+      "status": "PASS",
+      "detail": "status=200"
+    },
+    "session_persistence": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/dashboard"
+    },
+    "protected_routes": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/create"
+    },
+    "google_button_rendered": {
+      "status": "FAIL",
+      "detail": "Google button did not render"
+    },
+    "google_invalid_credential_401": {
+      "status": "PASS",
+      "detail": "status=401, message=Invalid Google credential"
+    },
+    "google_login_actual": {
+      "status": "FAIL",
+      "detail": "Actual Google account sign-in requires interactive Google account consent; no test Google account/credential was available to complete OAuth."
+    },
+    "role_handling_admin": {
+      "status": "PASS",
+      "detail": "6a253587a71bf3b5a6d76310"
+    }
+  },
+  "blogs": {
+    "create_1": {
+      "status": "PASS",
+      "detail": "Production Audit React Blog 1780823416939 status=201"
+    },
+    "create_2": {
+      "status": "PASS",
+      "detail": "Production Audit Node.js Blog 1780823416939 status=201"
+    },
+    "create_3": {
+      "status": "PASS",
+      "detail": "Production Audit JavaScript Blog 1780823416939 status=201"
+    },
+    "create_4": {
+      "status": "PASS",
+      "detail": "Production Audit TypeScript Blog 1780823416939 status=201"
+    },
+    "create_5": {
+      "status": "PASS",
+      "detail": "Production Audit MongoDB Blog 1780823416939 status=201"
+    },
+    "create_6": {
+      "status": "PASS",
+      "detail": "Production Audit System Design Blog 1780823416939 status=201"
+    },
+    "create_7": {
+      "status": "PASS",
+      "detail": "Production Audit DSA Blog 1780823416939 status=201"
+    },
+    "create_8": {
+      "status": "PASS",
+      "detail": "Production Audit AI Tools Blog 1780823416939 status=201"
+    },
+    "create_9": {
+      "status": "PASS",
+      "detail": "Production Audit Cybersecurity Blog 1780823416939 status=201"
+    },
+    "create_10": {
+      "status": "PASS",
+      "detail": "Production Audit Cloud Computing Blog 1780823416939 status=201"
+    },
+    "mongodb_persistence_10": {
+      "status": "PASS",
+      "detail": "found=10"
+    },
+    "draft_created": {
+      "status": "PASS",
+      "detail": "drafts=1"
+    },
+    "edit_blog": {
+      "status": "PASS",
+      "detail": "production-audit-react-blog-1780823416939-edited"
+    },
+    "publish_draft": {
+      "status": "PASS",
+      "detail": "published"
+    },
+    "delete_blog": {
+      "status": "PASS",
+      "detail": "status=200"
+    },
+    "search_React": {
+      "status": "PASS",
+      "detail": "results=13"
+    },
+    "search_Node": {
+      "status": "PASS",
+      "detail": "results=5"
+    },
+    "search_MongoDB": {
+      "status": "PASS",
+      "detail": "results=14"
+    },
+    "search_AI": {
+      "status": "PASS",
+      "detail": "results=11"
+    }
+  },
+  "uploads": {
+    "cover_cloudinary_urls": {
+      "status": "PASS",
+      "detail": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823434/devconnect/covers/rfl4pbfsi7uc3vdjkmbg.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823436/devconnect/covers/tlrl689nu2e9kdgqyj2t.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823438/devconnect/covers/w1wcfy4arkfo8fs0i0da.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823442/devconnect/covers/lt1vohusnl5457patbzy.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823444/devconnect/covers/uneoavijc31dqkl3xlrp.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823446/devconnect/covers/smv0d4f62fhdokgbur87.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823448/devconnect/covers/kuubktrhimdko4xyjokg.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823450/devconnect/covers/ugvjzyvdclbtpgo8f8ga.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823452/devconnect/covers/c89xvswycwehskopdsek.png\nhttps://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823454/devconnect/covers/xzlsew8xzgvqb3xsegpw.png"
+    },
+    "cover_displays_after_refresh": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/6a25358ba71bf3b5a6d76317"
+    },
+    "avatarCloudinaryUrl": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823463/devconnect/avatars/prozhjrkmoic2cg4puwl.png"
+  },
+  "social": {
+    "comments_replies": {
+      "status": "PASS",
+      "detail": "count=2"
+    },
+    "likes_unlikes": {
+      "status": "PASS",
+      "detail": "like=1, unlike=0"
+    },
+    "bookmarks_save_remove": {
+      "status": "PASS",
+      "detail": "save=true, remove=false"
+    },
+    "db_counts": {
+      "status": "PASS",
+      "detail": "comments persist, like/bookmark toggles removed"
+    }
+  },
+  "profile": {
+    "bio_social_avatar": {
+      "status": "PASS",
+      "detail": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823463/devconnect/avatars/prozhjrkmoic2cg4puwl.png"
+    }
+  },
+  "admin": {
+    "user_listing": {
+      "status": "PASS",
+      "detail": "users=22"
+    },
+    "analytics": {
+      "status": "PASS",
+      "detail": "{\"totalUsers\":22,\"totalBlogs\":70,\"totalComments\":95,\"totalViews\":13656}"
+    },
+    "admin_route_denies_user": {
+      "status": "PASS",
+      "detail": "status=403"
+    },
+    "user_deletion": {
+      "status": "PASS",
+      "detail": "status=200"
+    },
+    "blog_moderation_delete": {
+      "status": "PASS",
+      "detail": "status=200"
+    }
+  },
+  "api": {
+    "invalid_token_401": {
+      "status": "PASS",
+      "detail": "status=401"
+    },
+    "expired_token_401": {
+      "status": "PASS",
+      "detail": "status=401"
+    },
+    "unauthorized_401": {
+      "status": "PASS",
+      "detail": "status=401"
+    },
+    "validation_400": {
+      "status": "PASS",
+      "detail": "status=400"
+    },
+    "no_500s_observed": {
+      "status": "PASS",
+      "detail": "No API test returned 500"
+    },
+    "network_failures_zero": {
+      "status": "FAIL",
+      "detail": "failures=1"
+    },
+    "console_errors_zero": {
+      "status": "FAIL",
+      "detail": "errors=3, warnings=0"
+    }
+  },
+  "security": {
+    "html_sanitization": {
+      "status": "PASS",
+      "detail": "script tags stripped from stored content"
+    },
+    "helmet_headers": {
+      "status": "PASS",
+      "detail": "helmet headers present"
+    },
+    "rate_limit_headers": {
+      "status": "PASS",
+      "detail": "rate limit headers present"
+    },
+    "secrets_not_in_client_env": {
+      "status": "PASS",
+      "detail": "server secrets not exposed via VITE env"
+    }
+  },
+  "responsive": {
+    "320px": {
+      "status": "PASS",
+      "detail": "home/dashboard/blog/create/profile/admin captured"
+    },
+    "375px": {
+      "status": "PASS",
+      "detail": "home/dashboard/blog/create/profile/admin captured"
+    },
+    "768px": {
+      "status": "PASS",
+      "detail": "home/dashboard/blog/create/profile/admin captured"
+    },
+    "1024px": {
+      "status": "PASS",
+      "detail": "home/dashboard/blog/create/profile/admin captured"
+    },
+    "1440px": {
+      "status": "PASS",
+      "detail": "home/dashboard/blog/create/profile/admin captured"
+    }
+  },
+  "remaining": [
+    "auth.google_button_rendered: Google button did not render",
+    "auth.google_login_actual: Actual Google account sign-in requires interactive Google account consent; no test Google account/credential was available to complete OAuth.",
+    "api.network_failures_zero: failures=1",
+    "api.console_errors_zero: errors=3, warnings=0"
+  ],
+  "consoleSummary": {
+    "errors": 3,
+    "warnings": 0
+  }
+}

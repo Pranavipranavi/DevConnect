@@ -31,6 +31,13 @@ const previewServer = await preview({
   logLevel: 'silent'
 });
 
+const closeHttpServer = async (server) => {
+  await Promise.race([
+    new Promise((resolve) => server.close(resolve)),
+    new Promise((resolve) => setTimeout(resolve, 3000))
+  ]);
+};
+
 const chrome = await chromeLauncher.launch({
   chromePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
   chromeFlags: ['--headless', '--no-sandbox', '--disable-gpu']
@@ -52,7 +59,8 @@ try {
   try {
     await chrome.kill();
   } catch {}
-  await previewServer.httpServer.close();
-  await new Promise((resolve) => apiServer.close(resolve));
-  await mongoose.default.disconnect();
+  await closeHttpServer(previewServer.httpServer);
+  await closeHttpServer(apiServer);
+  await mongoose.default.disconnect().catch(() => {});
+  process.exit(0);
 }

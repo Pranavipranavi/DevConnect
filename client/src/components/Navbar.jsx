@@ -1,5 +1,4 @@
 import { Menu, Moon, PenSquare, Search, Sun, X } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -21,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <motion.header className="sticky top-0 z-40 border-b border-border-light bg-white/85 backdrop-blur-xl dark:border-border-dark dark:bg-[#0F172A]/88" initial={{ y: -18, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.28 }}>
+    <header className="sticky top-0 z-40 border-b border-border-light bg-white/85 backdrop-blur-xl transition-colors dark:border-border-dark dark:bg-[#0F172A]/88">
       <div className="container-shell flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-200">
           <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-sm font-black text-slate-950 shadow-sm">DC</span>
@@ -63,9 +62,8 @@ export default function Navbar() {
         </button>
       </div>
 
-      <AnimatePresence>
-        {open && (
-        <motion.div className="border-t border-border-light bg-white px-4 py-4 shadow-lg dark:border-border-dark dark:bg-[#0F172A] md:hidden" initial={{ opacity: 0, y: -8, height: 0 }} animate={{ opacity: 1, y: 0, height: 'auto' }} exit={{ opacity: 0, y: -8, height: 0 }} transition={{ duration: 0.2 }}>
+      {open && (
+        <div className="animate-menu-in border-t border-border-light bg-white px-4 py-4 shadow-lg dark:border-border-dark dark:bg-[#0F172A] md:hidden">
           <div className="flex flex-col gap-3 overflow-hidden">
             <form onSubmit={submitSearch} className="flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 dark:border-slate-800">
               <Search className="h-4 w-4 text-slate-400" />
@@ -77,9 +75,8 @@ export default function Navbar() {
             {user?.role === 'admin' && <Link to="/admin">Admin</Link>}
             {user ? <button type="button" onClick={logout} className="btn-secondary">Logout</button> : <Link to="/register" className="btn-primary">Start Writing</Link>}
           </div>
-        </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+        </div>
+      )}
+    </header>
   );
 }

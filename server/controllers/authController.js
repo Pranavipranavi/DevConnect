@@ -55,10 +55,15 @@ export const googleLogin = asyncHandler(async (req, res) => {
   if (!process.env.GOOGLE_CLIENT_ID) throw new ErrorResponse('Google sign-in is not configured', 503);
   if (!credential) throw new ErrorResponse('Google credential is required', 400);
 
-  const ticket = await googleClient.verifyIdToken({
-    idToken: credential,
-    audience: process.env.GOOGLE_CLIENT_ID
-  });
+  let ticket;
+  try {
+    ticket = await googleClient.verifyIdToken({
+      idToken: credential,
+      audience: process.env.GOOGLE_CLIENT_ID
+    });
+  } catch {
+    throw new ErrorResponse('Invalid Google credential', 401);
+  }
   const payload = ticket.getPayload();
 
   let user = await User.findOne({ email: payload.email });
@@ -76,6 +81,10 @@ export const googleLogin = asyncHandler(async (req, res) => {
 
 export const getMe = asyncHandler(async (req, res) => {
   res.json({ user: req.user });
+});
+
+export const refresh = asyncHandler(async (req, res) => {
+  sendAuth(res, req.user.toObject ? req.user.toObject() : req.user);
 });
 
 export const logout = (_req, res) => {

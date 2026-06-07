@@ -1,0 +1,143 @@
+{
+  "stamp": "1780823771913",
+  "postsFound": 8,
+  "posts": [
+    {
+      "_id": "6a2536ed2c4773fa99f48bf9",
+      "title": "Production Audit React Blog 1780823771913 Edited",
+      "slug": "production-audit-react-blog-1780823771913-edited",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823809/devconnect/covers/ltfem8llk54omtmzjpug.png",
+      "category": "React",
+      "tags": [
+        "edited",
+        "audit"
+      ],
+      "likes": 0,
+      "views": 6,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536ef2c4773fa99f48bfd",
+      "title": "Production Audit Node.js Blog 1780823771913",
+      "slug": "production-audit-nodejs-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823790/devconnect/covers/jnesjmx3coo70lipvytz.png",
+      "category": "Node.js",
+      "tags": [
+        "node-js",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536f12c4773fa99f48c01",
+      "title": "Production Audit JavaScript Blog 1780823771913",
+      "slug": "production-audit-javascript-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823792/devconnect/covers/tedl1pferdzraiscpgp6.png",
+      "category": "JavaScript",
+      "tags": [
+        "javascript",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536f42c4773fa99f48c05",
+      "title": "Production Audit TypeScript Blog 1780823771913",
+      "slug": "production-audit-typescript-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823794/devconnect/covers/jdmr2jv2cawltcpmfgs4.png",
+      "category": "TypeScript",
+      "tags": [
+        "typescript",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536f62c4773fa99f48c09",
+      "title": "Production Audit MongoDB Blog 1780823771913",
+      "slug": "production-audit-mongodb-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823796/devconnect/covers/iontezjp4dsqkyowms82.png",
+      "category": "MongoDB",
+      "tags": [
+        "mongodb",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536f72c4773fa99f48c0d",
+      "title": "Production Audit System Design Blog 1780823771913",
+      "slug": "production-audit-system-design-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823798/devconnect/covers/o4fsonelmqehpuzrkrut.png",
+      "category": "System Design",
+      "tags": [
+        "system-design",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2536fa2c4773fa99f48c11",
+      "title": "Production Audit DSA Blog 1780823771913",
+      "slug": "production-audit-dsa-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823800/devconnect/covers/iebdf6f4dki22z9f63mc.png",
+      "category": "DSA",
+      "tags": [
+        "dsa",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    },
+    {
+      "_id": "6a2537012c4773fa99f48c1d",
+      "title": "Production Audit Cloud Computing Blog 1780823771913",
+      "slug": "production-audit-cloud-computing-blog-1780823771913",
+      "coverImage": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823811/devconnect/covers/adrauibvdlopdr8tbzjh.png",
+      "category": "Cloud Computing",
+      "tags": [
+        "cloud-computing",
+        "audit",
+        "production"
+      ],
+      "likes": 0,
+      "views": 0,
+      "status": "published"
+    }
+  ],
+  "user": {
+    "_id": "6a2536df2c4773fa99f48bd5",
+    "email": "audit-1780823771913@devconnect.test",
+    "avatar": "https://res.cloudinary.com/dbnf8tmdx/image/upload/v1780823815/devconnect/avatars/effndsneeznuu7haol15.png",
+    "bio": "Production audit bio 1780823771913",
+    "role": "user",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/audit",
+      "github": "https://github.com/audit",
+      "twitter": "https://twitter.com/audit",
+      "portfolio": "https://audit.example.com"
+    },
+    "passwordHashPresent": true,
+    "passwordLooksBcrypt": true
+  },
+  "comments": 2,
+  "likes": 0,
+  "bookmarks": 0
+}
