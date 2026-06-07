@@ -12,6 +12,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import api from '../services/api.js';
 import useSeo from '../hooks/useSeo.js';
 import { compactNumber, formatDate } from '../utils/format.js';
+import { isRenderableImageUrl } from '../utils/image.js';
 
 export default function BlogDetails() {
   const [post, setPost] = useState(null);
@@ -63,7 +64,7 @@ export default function BlogDetails() {
   useSeo({
     title: post ? `${post.title} | DevConnect` : 'Blog | DevConnect',
     description: post ? `${post.title} by ${post.author?.name || 'DevConnect author'}` : 'Read developer articles on DevConnect.',
-    image: post?.coverImage
+    image: isRenderableImageUrl(post?.coverImage) ? post?.coverImage : undefined
   });
 
   const canManage = useMemo(() => user && post && (user.role === 'admin' || user._id === post.author?._id), [user, post]);
@@ -170,7 +171,7 @@ export default function BlogDetails() {
         </div>
       </section>
 
-      {post.coverImage && <div className="container-shell max-w-5xl py-8"><img src={post.coverImage} alt={post.title} className="aspect-[16/7] w-full rounded-lg object-cover" /></div>}
+      {isRenderableImageUrl(post.coverImage) && <div className="container-shell max-w-5xl py-8"><img src={post.coverImage} alt={post.title} className="aspect-[16/7] w-full rounded-lg object-cover" /></div>}
 
       <section className="container-shell grid max-w-6xl gap-8 py-8 lg:grid-cols-[220px_minmax(0,1fr)_220px]">
         <aside className="hidden lg:block">

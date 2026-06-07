@@ -81,16 +81,36 @@ const titles = [
   'How to Present a Full-Stack Project in Interviews'
 ];
 
-const cover = (index) => `https://images.unsplash.com/photo-${[
-  '1498050108023-c5249f4df085',
-  '1516321318423-f06f85e504b3',
-  '1555066931-4365d14bab8c',
-  '1461749280684-dccba630e2f6',
-  '1504639725590-34d0984388bd',
-  '1484417894907-623942c8ee29',
-  '1555949963-aa79dcee981c',
-  '1515879218367-8466d910aaa4'
-][index % 8]}?auto=format&fit=crop&w=1200&q=80`;
+const svgDataUri = (svg) => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+
+const avatarFor = (name) => svgDataUri(`
+  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+    <rect width="160" height="160" rx="80" fill="#0f172a"/>
+    <circle cx="124" cy="36" r="36" fill="#38bdf8" opacity=".82"/>
+    <circle cx="32" cy="130" r="44" fill="#f472b6" opacity=".7"/>
+    <text x="80" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#fff">${name.split(' ').map((part) => part[0]).join('').slice(0, 2)}</text>
+  </svg>
+`);
+
+const cover = (index) => {
+  const palettes = [
+    ['#0f172a', '#38bdf8', '#f472b6'],
+    ['#111827', '#22c55e', '#60a5fa'],
+    ['#18181b', '#f97316', '#a78bfa'],
+    ['#172554', '#14b8a6', '#facc15']
+  ];
+  const [bg, accent, secondary] = palettes[index % palettes.length];
+  return svgDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+      <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="#020617"/></linearGradient></defs>
+      <rect width="1200" height="675" fill="url(#g)"/>
+      <circle cx="${240 + (index % 4) * 90}" cy="160" r="160" fill="${accent}" opacity=".72"/>
+      <circle cx="${850 - (index % 3) * 80}" cy="480" r="210" fill="${secondary}" opacity=".56"/>
+      <path d="M120 505 C 310 400, 430 580, 610 470 S 910 300, 1080 410" fill="none" stroke="#fff" stroke-width="18" opacity=".18"/>
+      <text x="90" y="560" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff">DevConnect</text>
+    </svg>
+  `);
+};
 
 const contentFor = (title, category, index) => sanitizeContent(`
   <h2>${title}</h2>
@@ -134,7 +154,7 @@ export const seedDemoContent = async ({ reset = false } = {}) => {
         email,
         password: 'Password123!',
         bio,
-        avatar: `https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(name)}`,
+        avatar: avatarFor(name),
         socialLinks: {
           linkedin: 'https://www.linkedin.com',
           github: 'https://github.com',
@@ -145,7 +165,7 @@ export const seedDemoContent = async ({ reset = false } = {}) => {
     } else {
       user.name = name;
       user.bio = bio;
-      user.avatar = `https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(name)}`;
+      user.avatar = avatarFor(name);
       await user.save();
     }
     users.push(user);

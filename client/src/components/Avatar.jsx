@@ -1,7 +1,8 @@
 import { initials } from '../utils/format.js';
+import { isRenderableImageUrl } from '../utils/image.js';
 
 export default function Avatar({ user, size = 'h-10 w-10' }) {
-  if (user?.avatar) {
+  if (isRenderableImageUrl(user?.avatar)) {
     return <img src={user.avatar} alt={user.name} className={`${size} rounded-full object-cover`} />;
   }
 

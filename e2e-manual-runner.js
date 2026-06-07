@@ -9,6 +9,20 @@ const API = 'http://127.0.0.1:5000/api';
 const stamp = Date.now();
 const OUT = `${ROOT}/test-results/e2e-${stamp}`;
 
+process.env.PORT = '5000';
+process.env.CLIENT_URL = 'http://localhost:5173';
+process.env.API_PUBLIC_URL = 'http://127.0.0.1:5000';
+process.env.VITE_API_URL = API;
+
+const dotenv = await import('./server/node_modules/dotenv/lib/main.js');
+dotenv.config({ path: path.join(ROOT, 'server', '.env') });
+
+const { default: connectDB } = await import('./server/config/db.js');
+const { default: app } = await import('./server/app.js');
+const mongoose = await import('./server/node_modules/mongoose/index.js');
+const { createServer: createViteServer } = await import('./client/node_modules/vite/dist/node/index.js');
+process.chdir(path.join(ROOT, 'client'));
+
 const result = {
   startedAt: new Date().toISOString(),
   screenshots: [],
@@ -51,6 +65,18 @@ for (let i = 1; i <= 5; i += 1) {
   await fs.writeFile(path.join(OUT, `cover-${i}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#38BDF8"/><text x="80" y="330" font-size="72" font-family="Arial" fill="#0F172A">DevConnect E2E ${i}</text></svg>`);
 }
 await fs.writeFile(path.join(OUT, 'invalid-upload.txt'), 'not an image');
+
+await connectDB();
+const apiServer = await new Promise((resolve) => {
+  const server = app.listen(5000, '127.0.0.1', () => resolve(server));
+});
+const viteServer = await createViteServer({
+  root: path.join(ROOT, 'client'),
+  envDir: path.join(ROOT, 'client'),
+  logLevel: 'silent',
+  server: { host: '127.0.0.1', port: 5173, strictPort: true }
+});
+await viteServer.listen();
 
 const browser = await chromium.launch({ executablePath: CHROME, headless: true });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1100 } });
@@ -123,6 +149,7 @@ for (let i = 1; i <= 5; i += 1) {
     await page.locator('.ql-editor').fill(`This is E2E blog post ${i}. It has enough real content to verify publishing, dashboard counters, searching, and persistence in MongoDB.`);
     await page.getByRole('button', { name: 'Publish' }).click();
     await page.waitForURL('**/blogs/**', { timeout: 20000 });
+    await page.waitForLoadState('networkidle');
     await shot(page, `blog-created-${i}`, i === 1);
     createdPosts.push({ title: `E2E Production Blog ${i} ${stamp}`, url: page.url() });
     record('blog', `create_post_${i}`, true, page.url());
@@ -139,7 +166,7 @@ for (const created of createdPosts) {
   const slug = created.url.split('/').pop();
   const { response, body } = await apiFetch(`${API}/posts/${slug}`, { headers: authHeaders });
   postsDb.push(body.post);
-  record('blog', `db_verify_${slug}`, response.ok && body.post?.title === created.title, `coverImage=${body.post?.coverImage || ''}`);
+  record('blog', `db_verify_${slug}`, response.ok && body.post?.title === created.title && Boolean(body.post?.coverImage), `coverImage=${body.post?.coverImage || ''}`);
 }
 result.blog.createdPostIds = postsDb.filter(Boolean).map((post) => post._id);
 
@@ -150,6 +177,7 @@ for (const post of postsDb.slice(0, 2)) {
     await page.locator('.ql-editor').fill(`Edited content for ${post.title}. This verifies the update flow from UI through the API and MongoDB.`);
     await page.getByRole('button', { name: 'Publish' }).click();
     await page.waitForURL('**/blogs/**', { timeout: 15000 });
+    await page.waitForLoadState('networkidle');
     record('blog', `edit_${post._id}`, true, page.url());
   } catch (error) {
     record('blog', `edit_${post?._id || 'missing'}`, false, error.message);
@@ -168,7 +196,7 @@ try {
 
 const target = postsDb[0];
 try {
-  await page.goto(`${BASE}/blogs/${target.slug}`, { waitUntil: 'networkidle' });
+  await page.goto(`${BASE}/blogs/${target._id}`, { waitUntil: 'networkidle' });
   await page.getByLabel('Add to the discussion').fill('E2E root comment from browser.');
   await page.getByRole('button', { name: 'Submit comment' }).click();
   await page.waitForTimeout(1000);
@@ -307,7 +335,7 @@ try {
 try {
   await page.evaluate(() => localStorage.setItem('devconnect_token', 'invalid.token.value'));
   const invalidToken = await apiFetch(`${API}/users/dashboard`, { headers: { Authorization: 'Bearer invalid.token.value' } });
-  record('errors', 'invalid_token', invalidToken.response.status === 500 || invalidToken.response.status === 401, `status=${invalidToken.response.status}, message=${invalidToken.body.message || ''}`);
+  record('errors', 'invalid_token', invalidToken.response.status === 401, `status=${invalidToken.response.status}, message=${invalidToken.body.message || ''}`);
 } catch (error) {
   record('errors', 'invalid_token', false, error.message);
 }
@@ -327,5 +355,8 @@ try {
 }
 
 await browser.close();
+await viteServer.close();
+await new Promise((resolve) => apiServer.close(resolve));
+await mongoose.default.disconnect();
 await fs.writeFile(path.join(OUT, 'e2e-results.json'), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result, null, 2));

@@ -1,0 +1,573 @@
+{
+  "startedAt": "2026-06-06T12:58:12.160Z",
+  "screenshots": [
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\auth-register-dashboard.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\blog-created-1.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\blog-created-2.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\blog-created-3.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\blog-created-4.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\blog-created-5.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\search-react.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\search-node.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\search-mongodb.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\search-ai.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\profile-updated.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-home-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-dashboard-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-home-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-dashboard-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-home-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-dashboard-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-home-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-dashboard-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-home-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750690505\\responsive-dashboard-1440.png"
+  ],
+  "console": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    }
+  ],
+  "networkFailures": [
+    {
+      "url": "http://127.0.0.1:5000/api/posts/e2e-production-blog-5-1780750690505",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "auth": {
+    "register_new_account": {
+      "status": "PASS",
+      "detail": "registered e2e-1780750690505@devconnect.test"
+    },
+    "logout": {
+      "status": "PASS",
+      "detail": "logout button no longer visible"
+    },
+    "login": {
+      "status": "PASS",
+      "detail": "logged in after logout"
+    },
+    "refresh_after_login": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/dashboard"
+    },
+    "protected_routes_access": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/create"
+    },
+    "google_login": {
+      "status": "FAIL",
+      "detail": "VITE_GOOGLE_CLIENT_ID/GOOGLE_CLIENT_ID are empty; no Google button can complete OAuth."
+    }
+  },
+  "blog": {
+    "create_post_1": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750690505"
+    },
+    "create_post_2": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750690505"
+    },
+    "create_post_3": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-3-1780750690505"
+    },
+    "create_post_4": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-4-1780750690505"
+    },
+    "create_post_5": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-5-1780750690505"
+    },
+    "db_verify_e2e-production-blog-1-1780750690505": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750700926-6a52256bd840c5b5.svg"
+    },
+    "db_verify_e2e-production-blog-2-1780750690505": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750701965-fe89c6e96e2820e6.svg"
+    },
+    "db_verify_e2e-production-blog-3-1780750690505": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750703014-843cc90fba3882b9.svg"
+    },
+    "db_verify_e2e-production-blog-4-1780750690505": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750704090-104a59a52f1a43e3.svg"
+    },
+    "db_verify_e2e-production-blog-5-1780750690505": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750705071-721085fd8fe53c9c.svg"
+    },
+    "createdPostIds": [
+      "6a24196c75efc0cae09b61c0",
+      "6a24196d75efc0cae09b61c5",
+      "6a24196f75efc0cae09b61ca",
+      "6a24197075efc0cae09b61cf",
+      "6a24197175efc0cae09b61d4"
+    ],
+    "edit_6a24196c75efc0cae09b61c0": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750690505-edited"
+    },
+    "edit_6a24196d75efc0cae09b61c5": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750690505-edited"
+    },
+    "delete_1_post": {
+      "status": "PASS",
+      "detail": "status=404"
+    }
+  },
+  "comments": {
+    "add_comment_ui": {
+      "status": "PASS",
+      "detail": "root comment visible"
+    },
+    "add_reply_ui": {
+      "status": "PASS",
+      "detail": "reply visible"
+    },
+    "delete_comment_db": {
+      "status": "PASS",
+      "detail": "before=2, after=0"
+    }
+  },
+  "likes": {
+    "like": {
+      "status": "PASS",
+      "detail": "likes=1"
+    },
+    "unlike": {
+      "status": "PASS",
+      "detail": "likes=0"
+    }
+  },
+  "bookmarks": {
+    "save_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=1"
+    },
+    "remove_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=0"
+    }
+  },
+  "search": {
+    "React": {
+      "status": "PASS",
+      "detail": "9 results: E2E Production Blog 1 1780750690505 Edited | E2E Production Blog 1 1780750604355 Edited | E2E Production Blog 1 1780750511768 Edited"
+    },
+    "Node": {
+      "status": "PASS",
+      "detail": "4 results: E2E Production Blog 2 1780750690505 Edited | A Better Workflow for Drafts and Publishing | Building Better Empty States for Real Products"
+    },
+    "MongoDB": {
+      "status": "PASS",
+      "detail": "10 results: E2E Production Blog 3 1780750690505 | E2E Production Blog 3 1780750604355 | E2E Production Blog 3 1780750511768"
+    },
+    "AI": {
+      "status": "PASS",
+      "detail": "8 results: E2E Production Blog 4 1780750690505 | E2E Production Blog 4 1780750604355 | E2E Production Blog 4 1780750511768"
+    }
+  },
+  "profile": {
+    "update_bio_social_links": {
+      "status": "PASS",
+      "detail": "{\"linkedin\":\"https://www.linkedin.com/in/e2e\",\"github\":\"https://github.com/e2e\",\"twitter\":\"https://twitter.com/e2e\",\"portfolio\":\"https://e2e.example.com\"}"
+    },
+    "update_avatar": {
+      "status": "PASS",
+      "detail": "avatar=http://127.0.0.1:5000/uploads/avatars/1780750715454-d9d97dc11bcb172d.svg"
+    }
+  },
+  "admin": {
+    "view_users": {
+      "status": "PASS",
+      "detail": "users=15"
+    },
+    "delete_user": {
+      "status": "PASS",
+      "detail": "User and related content deleted"
+    },
+    "delete_blog": {
+      "status": "PASS",
+      "detail": "verify=404"
+    }
+  },
+  "responsive": {
+    "320px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "375px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "768px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1024px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1440px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    }
+  },
+  "errors": {
+    "invalid_image_upload": {
+      "status": "PASS",
+      "detail": "status=400, message=Only image uploads are allowed"
+    },
+    "invalid_token": {
+      "status": "PASS",
+      "detail": "status=401, message=Session expired or invalid. Please log in again."
+    },
+    "empty_search": {
+      "status": "PASS",
+      "detail": "results=0"
+    },
+    "empty_database_like_state": {
+      "status": "PASS",
+      "detail": "results=0"
+    }
+  }
+}

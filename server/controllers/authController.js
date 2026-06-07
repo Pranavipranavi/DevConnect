@@ -52,6 +52,7 @@ export const login = asyncHandler(async (req, res) => {
 
 export const googleLogin = asyncHandler(async (req, res) => {
   const { credential } = req.body;
+  if (!process.env.GOOGLE_CLIENT_ID) throw new ErrorResponse('Google sign-in is not configured', 503);
   if (!credential) throw new ErrorResponse('Google credential is required', 400);
 
   const ticket = await googleClient.verifyIdToken({

@@ -1,6 +1,5 @@
 import { Save, Send } from 'lucide-react';
-import { useEffect, useMemo, useState } from 'react';
-import ReactQuill from 'react-quill';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 
 const initialState = {
@@ -12,6 +11,36 @@ const initialState = {
 };
 
 const slugify = (value) => value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+function RichTextEditor({ value, onChange }) {
+  const editorRef = useRef(null);
+
+  useEffect(() => {
+    if (editorRef.current && editorRef.current.innerHTML !== value) {
+      editorRef.current.innerHTML = value || '';
+    }
+  }, [value]);
+
+  const update = () => {
+    onChange(editorRef.current?.innerHTML || '');
+  };
+
+  return (
+    <div className="rounded-md border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-950">
+      <div
+        ref={editorRef}
+        className="ql-editor min-h-[360px] px-4 py-3 text-base leading-7 outline-none"
+        contentEditable
+        role="textbox"
+        aria-label="Article content"
+        data-placeholder="Write a practical, recruiter-ready developer article..."
+        onInput={update}
+        onBlur={update}
+        suppressContentEditableWarning
+      />
+    </div>
+  );
+}
 
 export default function BlogForm({ initialValues, onSubmit, submitting }) {
   const [form, setForm] = useState(initialState);
@@ -73,7 +102,7 @@ export default function BlogForm({ initialValues, onSubmit, submitting }) {
       </div>
 
       <div className="surface overflow-hidden p-2">
-        <ReactQuill theme="snow" value={form.content} onChange={(value) => update('content', value)} className="min-h-[360px]" />
+        <RichTextEditor value={form.content} onChange={(value) => update('content', value)} />
       </div>
 
       <div className="flex flex-wrap justify-end gap-3">

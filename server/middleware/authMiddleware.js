@@ -14,7 +14,12 @@ export const protect = asyncHandler(async (req, _res, next) => {
 
   if (!token) throw new ErrorResponse('Authentication required', 401);
 
-  const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  let decoded;
+  try {
+    decoded = jwt.verify(token, process.env.JWT_SECRET);
+  } catch {
+    throw new ErrorResponse('Session expired or invalid. Please log in again.', 401);
+  }
   const user = await User.findById(decoded.id).select('-password');
   if (!user) throw new ErrorResponse('User no longer exists', 401);
 

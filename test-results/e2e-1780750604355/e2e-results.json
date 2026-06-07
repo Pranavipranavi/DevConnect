@@ -1,0 +1,605 @@
+{
+  "startedAt": "2026-06-06T12:56:46.076Z",
+  "screenshots": [
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\auth-register-dashboard.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\blog-created-1.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\blog-created-2.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\blog-created-3.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\blog-created-4.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\blog-created-5.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\search-react.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\search-node.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\search-mongodb.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\search-ai.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\profile-updated.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-home-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-dashboard-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-home-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-dashboard-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-home-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-dashboard-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-home-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-dashboard-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-home-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750604355\\responsive-dashboard-1440.png"
+  ],
+  "console": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at EditBlog (http://localhost:5173/src/pages/EditBlog.jsx:12:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=85f2b56c:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at EditBlog (http://localhost:5173/src/pages/EditBlog.jsx:12:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:1885:35)\n    at Page (http://localhost:5173/src/App.jsx:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=85f2b56c:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=85f2b56c:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    }
+  ],
+  "networkFailures": [
+    {
+      "url": "http://127.0.0.1:5000/api/posts/e2e-production-blog-5-1780750604355",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "auth": {
+    "register_new_account": {
+      "status": "PASS",
+      "detail": "registered e2e-1780750604355@devconnect.test"
+    },
+    "logout": {
+      "status": "PASS",
+      "detail": "logout button no longer visible"
+    },
+    "login": {
+      "status": "PASS",
+      "detail": "logged in after logout"
+    },
+    "refresh_after_login": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/dashboard"
+    },
+    "protected_routes_access": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/create"
+    },
+    "google_login": {
+      "status": "FAIL",
+      "detail": "VITE_GOOGLE_CLIENT_ID/GOOGLE_CLIENT_ID are empty; no Google button can complete OAuth."
+    }
+  },
+  "blog": {
+    "create_post_1": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750604355"
+    },
+    "create_post_2": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750604355"
+    },
+    "create_post_3": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-3-1780750604355"
+    },
+    "create_post_4": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-4-1780750604355"
+    },
+    "create_post_5": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-5-1780750604355"
+    },
+    "db_verify_e2e-production-blog-1-1780750604355": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750616024-0fa76a7bbba19eab.svg"
+    },
+    "db_verify_e2e-production-blog-2-1780750604355": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750617006-f2eec3aa0fb52be6.svg"
+    },
+    "db_verify_e2e-production-blog-3-1780750604355": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750617903-806ffe0707a8b1e4.svg"
+    },
+    "db_verify_e2e-production-blog-4-1780750604355": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750618871-8e951ccf31c7480d.svg"
+    },
+    "db_verify_e2e-production-blog-5-1780750604355": {
+      "status": "PASS",
+      "detail": "coverImage=http://127.0.0.1:5000/uploads/covers/1780750619915-a4e26510c1d98c49.svg"
+    },
+    "createdPostIds": [
+      "6a241918e553a967fbe579f1",
+      "6a241919e553a967fbe579f6",
+      "6a241919e553a967fbe579fb",
+      "6a24191ae553a967fbe57a00",
+      "6a24191be553a967fbe57a05"
+    ],
+    "edit_6a241918e553a967fbe579f1": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750604355-edited"
+    },
+    "edit_6a241919e553a967fbe579f6": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750604355-edited"
+    },
+    "delete_1_post": {
+      "status": "PASS",
+      "detail": "status=404"
+    }
+  },
+  "comments": {
+    "add_comment_ui": {
+      "status": "PASS",
+      "detail": "root comment visible"
+    },
+    "add_reply_ui": {
+      "status": "PASS",
+      "detail": "reply visible"
+    },
+    "delete_comment_db": {
+      "status": "PASS",
+      "detail": "before=2, after=0"
+    }
+  },
+  "likes": {
+    "like": {
+      "status": "PASS",
+      "detail": "likes=1"
+    },
+    "unlike": {
+      "status": "PASS",
+      "detail": "likes=0"
+    }
+  },
+  "bookmarks": {
+    "save_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=1"
+    },
+    "remove_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=0"
+    }
+  },
+  "search": {
+    "React": {
+      "status": "PASS",
+      "detail": "8 results: E2E Production Blog 1 1780750604355 Edited | E2E Production Blog 1 1780750511768 Edited | E2E Production Blog 1 1780750039569 Edited"
+    },
+    "Node": {
+      "status": "PASS",
+      "detail": "4 results: E2E Production Blog 2 1780750604355 Edited | A Better Workflow for Drafts and Publishing | Building Better Empty States for Real Products"
+    },
+    "MongoDB": {
+      "status": "PASS",
+      "detail": "9 results: E2E Production Blog 3 1780750604355 | E2E Production Blog 3 1780750511768 | E2E Production Blog 3 1780750039569"
+    },
+    "AI": {
+      "status": "PASS",
+      "detail": "7 results: E2E Production Blog 4 1780750604355 | E2E Production Blog 4 1780750511768 | E2E Production Blog 4 1780750039569"
+    }
+  },
+  "profile": {
+    "update_bio_social_links": {
+      "status": "PASS",
+      "detail": "{\"linkedin\":\"https://www.linkedin.com/in/e2e\",\"github\":\"https://github.com/e2e\",\"twitter\":\"https://twitter.com/e2e\",\"portfolio\":\"https://e2e.example.com\"}"
+    },
+    "update_avatar": {
+      "status": "PASS",
+      "detail": "avatar=http://127.0.0.1:5000/uploads/avatars/1780750630143-ac230eeca96b5a2e.svg"
+    }
+  },
+  "admin": {
+    "view_users": {
+      "status": "PASS",
+      "detail": "users=14"
+    },
+    "delete_user": {
+      "status": "PASS",
+      "detail": "User and related content deleted"
+    },
+    "delete_blog": {
+      "status": "PASS",
+      "detail": "verify=404"
+    }
+  },
+  "responsive": {
+    "320px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "375px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "768px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1024px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1440px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    }
+  },
+  "errors": {
+    "invalid_image_upload": {
+      "status": "PASS",
+      "detail": "status=400, message=Only image uploads are allowed"
+    },
+    "invalid_token": {
+      "status": "PASS",
+      "detail": "status=401, message=Session expired or invalid. Please log in again."
+    },
+    "empty_search": {
+      "status": "PASS",
+      "detail": "results=0"
+    },
+    "empty_database_like_state": {
+      "status": "PASS",
+      "detail": "results=0"
+    }
+  }
+}

@@ -34,9 +34,9 @@ export default function Register() {
         <h1 className="text-3xl font-black">Start Writing</h1>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Create your DevConnect profile and publish your first article.</p>
         <div className="mt-6 grid gap-4">
-          <label className="grid gap-2"><span className="label">Name</span><input className="input" value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} /></label>
-          <label className="grid gap-2"><span className="label">Email</span><input className="input" type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} /></label>
-          <label className="grid gap-2"><span className="label">Password</span><input className="input" type="password" value={form.password} onChange={(event) => setForm({ ...form, password: event.target.value })} /></label>
+          <label className="grid gap-2"><span className="label">Name</span><input className="input" autoComplete="name" value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} /></label>
+          <label className="grid gap-2"><span className="label">Email</span><input className="input" type="email" autoComplete="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} /></label>
+          <label className="grid gap-2"><span className="label">Password</span><input className="input" type="password" autoComplete="new-password" value={form.password} onChange={(event) => setForm({ ...form, password: event.target.value })} /></label>
           <button disabled={loading} className="btn-primary">Create Account</button>
           <p className="text-center text-sm text-slate-500">Already registered? <Link to="/login" className="font-semibold text-primary">Login</Link></p>
         </div>

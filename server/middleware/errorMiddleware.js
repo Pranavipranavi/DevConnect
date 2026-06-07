@@ -17,6 +17,16 @@ const errorMiddleware = (err, _req, res, _next) => {
     message = Object.values(err.errors).map((item) => item.message).join(', ');
   }
 
+  if (err.name === 'JsonWebTokenError' || err.name === 'TokenExpiredError') {
+    statusCode = 401;
+    message = 'Session expired or invalid. Please log in again.';
+  }
+
+  if (err.name === 'MulterError') {
+    statusCode = 400;
+    message = err.message || 'File upload failed';
+  }
+
   res.status(statusCode).json({
     message,
     stack: process.env.NODE_ENV === 'production' ? undefined : err.stack

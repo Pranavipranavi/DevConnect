@@ -1,0 +1,997 @@
+{
+  "startedAt": "2026-06-06T12:47:19.569Z",
+  "screenshots": [
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\auth-register-dashboard.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\blog-created-1.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\blog-created-2.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\blog-created-3.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\blog-created-4.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\blog-created-5.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\search-react.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\search-node.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\search-mongodb.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\search-ai.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\profile-updated.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-home-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-dashboard-320.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-home-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-dashboard-375.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-home-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-dashboard-768.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-home-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-dashboard-1024.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-home-1440.png",
+    "D:\\Codtech\\Auth of Full Stack\\test-results\\e2e-1780750039569\\responsive-dashboard-1440.png"
+  ],
+  "console": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at CreateBlog (http://localhost:5173/src/pages/CreateBlog.jsx:10:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at EditBlog (http://localhost:5173/src/pages/EditBlog.jsx:12:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node%s \n    at ReactQuill (http://localhost:5173/node_modules/.vite/deps/react-quill.js?v=b4ef1629:15587:23)\n    at div\n    at form\n    at BlogForm (http://localhost:5173/src/components/BlogForm.jsx:15:36)\n    at section\n    at EditBlog (http://localhost:5173/src/pages/EditBlog.jsx:12:2)\n    at div\n    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:1885:35)\n    at Page (http://localhost:5173/src/App.jsx?t=1780749979033:21:17)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at ProtectedRoute (http://localhost:5173/src/components/ProtectedRoute.jsx:7:28)\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3700:25)\n    at main\n    at div\n    at MainLayout\n    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3329:8)\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3772:8)\n    at PresenceChild (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:804:24)\n    at AnimatePresence (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=82bf7812:970:26)\n    at Suspense\n    at App (http://localhost:5173/src/App.jsx?t=1780749979033:45:19)\n    at ErrorBoundary (http://localhost:5173/src/components/ErrorBoundary.jsx:7:3)\n    at AuthProvider (http://localhost:5173/src/context/AuthContext.jsx:7:32)\n    at ThemeProvider (http://localhost:5173/src/context/ThemeContext.jsx:5:33)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:3720:18)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=b7836b15:4395:8)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+    },
+    {
+      "type": "warning",
+      "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "warning",
+      "text": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    }
+  ],
+  "networkFailures": [
+    {
+      "url": "http://localhost:5173/src/components/ErrorState.jsx",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://localhost:5173/src/components/EmptyState.jsx",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://localhost:5173/src/components/ConfirmModal.jsx",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "auth": {
+    "register_new_account": {
+      "status": "PASS",
+      "detail": "registered e2e-1780750039569@devconnect.test"
+    },
+    "logout": {
+      "status": "PASS",
+      "detail": "logout button no longer visible"
+    },
+    "login": {
+      "status": "PASS",
+      "detail": "logged in after logout"
+    },
+    "refresh_after_login": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/dashboard"
+    },
+    "protected_routes_access": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/create"
+    },
+    "google_login": {
+      "status": "FAIL",
+      "detail": "VITE_GOOGLE_CLIENT_ID/GOOGLE_CLIENT_ID are empty; no Google button can complete OAuth."
+    }
+  },
+  "blog": {
+    "create_post_1": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750039569"
+    },
+    "create_post_2": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750039569"
+    },
+    "create_post_3": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-3-1780750039569"
+    },
+    "create_post_4": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-4-1780750039569"
+    },
+    "create_post_5": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-5-1780750039569"
+    },
+    "db_verify_e2e-production-blog-1-1780750039569": {
+      "status": "PASS",
+      "detail": "coverImage="
+    },
+    "db_verify_e2e-production-blog-2-1780750039569": {
+      "status": "PASS",
+      "detail": "coverImage="
+    },
+    "db_verify_e2e-production-blog-3-1780750039569": {
+      "status": "PASS",
+      "detail": "coverImage="
+    },
+    "db_verify_e2e-production-blog-4-1780750039569": {
+      "status": "PASS",
+      "detail": "coverImage="
+    },
+    "db_verify_e2e-production-blog-5-1780750039569": {
+      "status": "PASS",
+      "detail": "coverImage="
+    },
+    "createdPostIds": [
+      "6a2416e105b64e4da44eb582",
+      "6a2416e205b64e4da44eb588",
+      "6a2416e305b64e4da44eb58e",
+      "6a2416e405b64e4da44eb594",
+      "6a2416e505b64e4da44eb59a"
+    ],
+    "edit_6a2416e105b64e4da44eb582": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-1-1780750039569-edited"
+    },
+    "edit_6a2416e205b64e4da44eb588": {
+      "status": "PASS",
+      "detail": "http://localhost:5173/blogs/e2e-production-blog-2-1780750039569-edited"
+    },
+    "delete_1_post": {
+      "status": "PASS",
+      "detail": "status=404"
+    }
+  },
+  "comments": {
+    "add_comment_ui": {
+      "status": "FAIL",
+      "detail": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Add to the discussion')\u001b[22m\n"
+    },
+    "add_reply_ui": {
+      "status": "FAIL",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Reply' }).first()\u001b[22m\n"
+    },
+    "delete_comment_db": {
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading '_id')"
+    }
+  },
+  "likes": {
+    "like": {
+      "status": "PASS",
+      "detail": "likes=1"
+    },
+    "unlike": {
+      "status": "PASS",
+      "detail": "likes=0"
+    }
+  },
+  "bookmarks": {
+    "save_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=1"
+    },
+    "remove_post": {
+      "status": "PASS",
+      "detail": "dashboardBookmarks=0"
+    }
+  },
+  "search": {
+    "React": {
+      "status": "PASS",
+      "detail": "6 results: E2E Production Blog 1 1780750039569 Edited | E2E Production Blog 1 1780748064433 Edited | Handling Auth State in React Context"
+    },
+    "Node": {
+      "status": "PASS",
+      "detail": "4 results: E2E Production Blog 2 1780750039569 Edited | A Better Workflow for Drafts and Publishing | Building Better Empty States for Real Products"
+    },
+    "MongoDB": {
+      "status": "PASS",
+      "detail": "7 results: E2E Production Blog 3 1780750039569 | E2E Production Blog 3 1780748064433 | Building Comment Threads with MongoDB"
+    },
+    "AI": {
+      "status": "PASS",
+      "detail": "5 results: E2E Production Blog 4 1780750039569 | E2E Production Blog 4 1780748064433 | Secure Defaults for Express Applications"
+    }
+  },
+  "profile": {
+    "update_bio_social_links": {
+      "status": "PASS",
+      "detail": "{\"linkedin\":\"https://www.linkedin.com/in/e2e\",\"github\":\"https://github.com/e2e\",\"twitter\":\"https://twitter.com/e2e\",\"portfolio\":\"https://e2e.example.com\"}"
+    },
+    "update_avatar": {
+      "status": "FAIL",
+      "detail": "avatar="
+    }
+  },
+  "admin": {
+    "view_users": {
+      "status": "PASS",
+      "detail": "users=12"
+    },
+    "delete_user": {
+      "status": "PASS",
+      "detail": "User and related content deleted"
+    },
+    "delete_blog": {
+      "status": "PASS",
+      "detail": "verify=404"
+    }
+  },
+  "responsive": {
+    "320px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "375px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "768px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1024px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    },
+    "1440px": {
+      "status": "PASS",
+      "detail": "screenshots captured"
+    }
+  },
+  "errors": {
+    "invalid_image_upload": {
+      "status": "PASS",
+      "detail": "status=400, message=Only image uploads are allowed"
+    },
+    "invalid_token": {
+      "status": "PASS",
+      "detail": "status=500, message=invalid token"
+    },
+    "empty_search": {
+      "status": "PASS",
+      "detail": "results=0"
+    },
+    "empty_database_like_state": {
+      "status": "PASS",
+      "detail": "results=0"
+    }
+  }
+}
