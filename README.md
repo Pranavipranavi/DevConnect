@@ -4,6 +4,7 @@ DevConnect is a premium MERN Stack developer blogging platform inspired by Dev.t
 
 **Tagline:** Share Knowledge. Build Reputation. Grow Together.
 
+Test commit from Sunny
 ## Features
 
 - JWT authentication with register, login, logout, persistent login, and protected routes
