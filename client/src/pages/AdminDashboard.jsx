@@ -19,16 +19,22 @@ export default function AdminDashboard() {
       setUsers(userRes.data.users);
       setStats(analyticsRes.data.stats);
     } catch (err) {
-      setError(err.message || 'Could not load admin dashboard');
+      const message = err.message || 'Could not load admin dashboard';
+      setError(message);
+      toast.error(message);
     }
   };
 
   useEffect(() => { load(); }, []);
 
   const deleteUser = async (id) => {
-    await api.delete(`/admin/user/${id}`);
-    toast.success('User deleted');
-    load();
+    try {
+      await api.delete(`/admin/user/${id}`);
+      toast.success('User deleted');
+      load();
+    } catch (err) {
+      toast.error(err.message || 'Could not delete user');
+    }
   };
 
   if (error && (!users || !stats)) return <section className="container-shell py-10"><ErrorState message={error} onRetry={load} /></section>;

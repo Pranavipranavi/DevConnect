@@ -28,16 +28,24 @@ export default function Dashboard() {
     setError('');
     return api.get('/users/dashboard')
       .then(({ data: result }) => setData(result))
-      .catch((err) => setError(err.message || 'Could not load dashboard'));
+      .catch((err) => {
+        const message = err.message || 'Could not load dashboard';
+        setError(message);
+        toast.error(message);
+      });
   };
 
   useEffect(() => { load(); }, []);
 
   const deletePost = async (id) => {
-    await api.delete(`/posts/${id}`);
-    toast.success('Post deleted');
-    setDeleteTarget(null);
-    load();
+    try {
+      await api.delete(`/posts/${id}`);
+      toast.success('Post deleted');
+      setDeleteTarget(null);
+      load();
+    } catch (err) {
+      toast.error(err.message || 'Could not delete post');
+    }
   };
 
   if (error && !data) return <section className="container-shell py-10"><ErrorState message={error} onRetry={load} /></section>;

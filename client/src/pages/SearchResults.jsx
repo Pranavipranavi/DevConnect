@@ -38,7 +38,9 @@ export default function SearchResults() {
       const { data } = await api.get(`/posts?search=${params.get('q') || ''}&category=${params.get('category') || ''}&tag=${params.get('tag') || ''}&sort=${params.get('sort') || sort}`);
       setPosts(data.posts);
     } catch (err) {
-      setError(err.message || 'Could not load posts');
+      const message = err.message || 'Could not load posts';
+      setError(message);
+      toast.error(message);
     } finally {
       setLoading(false);
     }
@@ -53,7 +55,7 @@ export default function SearchResults() {
       toast.success(data.message);
       await loadPosts();
     } catch (err) {
-      toast.error(err.message || 'Could not generate sample data');
+      toast.error(err.message || 'Unable to generate sample data. Please try again.');
     } finally {
       setSeeding(false);
     }

@@ -39,7 +39,11 @@ export default function Profile() {
       twitter: data.user.socialLinks?.twitter || '',
       portfolio: data.user.socialLinks?.portfolio || ''
     });
-    }).catch((err) => setError(err.message || 'Could not load profile'));
+    }).catch((err) => {
+      const message = err.message || 'Could not load profile';
+      setError(message);
+      toast.error(message);
+    });
   };
 
   useEffect(() => { load(); }, [id]);
@@ -49,10 +53,14 @@ export default function Profile() {
     const data = new FormData();
     Object.entries(form).forEach(([key, value]) => data.append(key, value || ''));
     if (avatar) data.append('avatar', avatar);
-    const response = await api.put('/users/profile', data);
-    setUser(response.data.user);
-    toast.success('Profile updated');
-    load();
+    try {
+      const response = await api.put('/users/profile', data);
+      setUser(response.data.user);
+      toast.success('Profile updated');
+      load();
+    } catch (err) {
+      toast.error(err.message || 'Could not update profile');
+    }
   };
 
   if (error && !profile) return <section className="container-shell py-10"><ErrorState message={error} onRetry={load} /></section>;

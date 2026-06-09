@@ -27,7 +27,9 @@ export default function Home() {
       const { data } = await api.get('/posts?limit=9&sort=latest');
       setPosts(data.posts);
     } catch (err) {
-      setError(err.message || 'Could not load posts');
+      const message = err.message || 'Could not load posts';
+      setError(message);
+      toast.error(message);
     } finally {
       setLoading(false);
     }
@@ -42,7 +44,7 @@ export default function Home() {
       toast.success(data.message);
       await loadPosts();
     } catch (err) {
-      toast.error(err.message || 'Could not generate sample data');
+      toast.error(err.message || 'Unable to generate sample data. Please try again.');
     } finally {
       setSeeding(false);
     }

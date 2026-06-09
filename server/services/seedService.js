@@ -122,6 +122,72 @@ const contentFor = (title, category, index) => sanitizeContent(`
   <p>Practice note ${index + 1}: after shipping a feature, test it once as a guest, once as an authenticated user, and once on mobile. The bugs you find there are usually the ones interviewers notice first.</p>
 `);
 
+const findOrCreateDemoUser = async ({ name, bio, email }) => {
+  let user = await User.findOne({ email });
+  if (user) {
+    user.name = name;
+    user.bio = bio;
+    user.avatar = avatarFor(name);
+    user.socialLinks = {
+      linkedin: 'https://www.linkedin.com',
+      github: 'https://github.com',
+      twitter: 'https://twitter.com',
+      portfolio: 'https://example.com'
+    };
+    await user.save();
+    return { user, created: false };
+  }
+
+  try {
+    user = await User.create({
+      name,
+      email,
+      password: 'Password123!',
+      bio,
+      avatar: avatarFor(name),
+      socialLinks: {
+        linkedin: 'https://www.linkedin.com',
+        github: 'https://github.com',
+        twitter: 'https://twitter.com',
+        portfolio: 'https://example.com'
+      }
+    });
+    return { user, created: true };
+  } catch (error) {
+    if (error.code !== 11000) throw error;
+    user = await User.findOne({ email });
+    if (!user) throw error;
+    return { user, created: false };
+  }
+};
+
+const findOrCreateDemoPost = async ({ title, author, category, postTags, content, index }) => {
+  let post = await Post.findOne({ title, author: author._id });
+  if (post) return { post, created: false };
+
+  try {
+    post = await Post.create({
+      title,
+      slug: await createSlug(title),
+      content,
+      coverImage: cover(index),
+      category,
+      tags: postTags,
+      author: author._id,
+      likes: 0,
+      views: 120 + index * 23,
+      status: 'published',
+      readingTime: calculateReadingTime(content)
+    });
+    return { post, created: true };
+  } catch (error) {
+    if (error.code !== 11000) throw error;
+    post = await Post.findOne({ title, author: author._id });
+    if (!post) throw error;
+    return { post, created: false };
+  }
+};
+
 export const seedDemoContent = async ({ reset = false } = {}) => {
   if (reset) {
     await Promise.all([
@@ -132,69 +198,33 @@ export const seedDemoContent = async ({ reset = false } = {}) => {
     ]);
   }
 
-  const existingPublished = await Post.countDocuments({ status: 'published' });
-  if (existingPublished >= 30 && !reset) {
-    return {
-      created: false,
-      users: await User.countDocuments({ email: /@devconnect\.demo$/ }),
-      posts: existingPublished,
-      categories: categories.length,
-      tags: tags.length
-    };
-  }
-
   const users = [];
+  let createdUsers = 0;
   for (const [index, author] of authors.entries()) {
     const [name, bio] = author;
     const email = `${name.toLowerCase().replace(/\s+/g, '.')}@devconnect.demo`;
-    let user = await User.findOne({ email });
-    if (!user) {
-      user = await User.create({
-        name,
-        email,
-        password: 'Password123!',
-        bio,
-        avatar: avatarFor(name),
-        socialLinks: {
-          linkedin: 'https://www.linkedin.com',
-          github: 'https://github.com',
-          twitter: 'https://twitter.com',
-          portfolio: 'https://example.com'
-        }
-      });
-    } else {
-      user.name = name;
-      user.bio = bio;
-      user.avatar = avatarFor(name);
-      await user.save();
-    }
+    const { user, created } = await findOrCreateDemoUser({ name, bio, email, index });
+    if (created) createdUsers += 1;
     users.push(user);
   }
 
   const posts = [];
+  let createdPosts = 0;
+  let createdComments = 0;
+  let createdLikes = 0;
   for (const [index, title] of titles.entries()) {
     const category = categories[index % categories.length];
     const postTags = [tags[index % tags.length], tags[(index + 4) % tags.length], tags[(index + 8) % tags.length]];
     const content = contentFor(title, category, index);
-    const existing = await Post.findOne({ title, author: users[index % users.length]._id });
-    if (existing) {
-      posts.push(existing);
-      continue;
-    }
-
-    const post = await Post.create({
+    const { post, created } = await findOrCreateDemoPost({
       title,
-      slug: await createSlug(title),
-      content,
-      coverImage: cover(index),
+      author: users[index % users.length],
       category,
-      tags: postTags,
-      author: users[index % users.length]._id,
-      likes: 0,
-      views: 120 + index * 23,
-      status: 'published',
-      readingTime: calculateReadingTime(content)
+      postTags,
+      content,
+      index
     });
+    if (created) createdPosts += 1;
     posts.push(post);
   }
 
@@ -205,27 +235,42 @@ export const seedDemoContent = async ({ reset = false } = {}) => {
   ];
 
   for (const [postIndex, post] of posts.entries()) {
-    const existingComments = await Comment.countDocuments({ postId: post._id });
-    if (!existingComments) {
-      for (let i = 0; i < 3; i += 1) {
+    for (let i = 0; i < 3; i += 1) {
+      const commentPayload = {
+        postId: post._id,
+        userId: users[(postIndex + i + 1) % users.length]._id,
+        comment: commentTexts[i]
+      };
+      const existingComment = await Comment.findOne(commentPayload);
+      if (!existingComment) {
         await Comment.create({
-          postId: post._id,
-          userId: users[(postIndex + i + 1) % users.length]._id,
-          comment: commentTexts[i]
+          ...commentPayload
         });
+        createdComments += 1;
       }
     }
 
     const likeUsers = users.slice(0, (postIndex % users.length) + 1);
     for (const user of likeUsers) {
-      await Like.updateOne({ postId: post._id, userId: user._id }, { postId: post._id, userId: user._id }, { upsert: true });
+      const likeResult = await Like.updateOne(
+        { postId: post._id, userId: user._id },
+        { postId: post._id, userId: user._id },
+        { upsert: true }
+      );
+      if (likeResult.upsertedCount) createdLikes += 1;
     }
     post.likes = await Like.countDocuments({ postId: post._id });
     await post.save();
   }
 
+  const created = createdUsers + createdPosts + createdComments + createdLikes > 0;
+
   return {
-    created: true,
+    created,
+    createdUsers,
+    createdPosts,
+    createdComments,
+    createdLikes,
     users: users.length,
     posts: posts.length,
     categories: categories.length,

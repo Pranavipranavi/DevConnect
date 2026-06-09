@@ -3,6 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import cloudinary from '../config/cloudinary.js';
+import ErrorResponse from '../utils/errorResponse.js';
 
 const toDataUri = (file) => `data:${file.mimetype};base64,${file.buffer.toString('base64')}`;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,10 +32,14 @@ export const uploadImage = async (file, folder) => {
   if (!process.env.CLOUDINARY_CLOUD_NAME || !process.env.CLOUDINARY_API_KEY || !process.env.CLOUDINARY_API_SECRET) {
     return localUploadUrl(file, folder);
   }
-  const result = await cloudinary.uploader.upload(toDataUri(file), {
-    folder: `devconnect/${folder}`,
-    resource_type: 'image',
-    transformation: [{ quality: 'auto', fetch_format: 'auto' }]
-  });
-  return result.secure_url;
+  try {
+    const result = await cloudinary.uploader.upload(toDataUri(file), {
+      folder: `devconnect/${folder}`,
+      resource_type: 'image',
+      transformation: [{ quality: 'auto', fetch_format: 'auto' }]
+    });
+    return result.secure_url;
+  } catch (error) {
+    throw new ErrorResponse('Image upload failed', error.http_code || 502);
+  }
 };

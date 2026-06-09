@@ -19,6 +19,12 @@ export default function Navbar() {
     navigate(`/search?q=${encodeURIComponent(query)}`);
   };
 
+  const handleLogout = () => {
+    logout();
+    setOpen(false);
+    window.setTimeout(() => navigate('/', { replace: true }), 0);
+  };
+
   return (
     <header className="sticky top-0 z-40 border-b border-border-light bg-white/85 backdrop-blur-xl transition-colors dark:border-border-dark dark:bg-[#0F172A]/88">
       <div className="container-shell flex h-16 items-center justify-between gap-4">
@@ -47,7 +53,7 @@ export default function Navbar() {
             <>
               <Link to="/create" className="btn-primary"><PenSquare className="h-4 w-4" /> Write</Link>
               <Link to="/profile"><Avatar user={user} /></Link>
-              <button type="button" onClick={logout} className="btn-secondary">Logout</button>
+              <button type="button" onClick={handleLogout} className="btn-secondary">Logout</button>
             </>
           ) : (
             <>
@@ -73,7 +79,7 @@ export default function Navbar() {
             <Link to="/search">Explore</Link>
             {user && <Link to="/dashboard">Dashboard</Link>}
             {user?.role === 'admin' && <Link to="/admin">Admin</Link>}
-            {user ? <button type="button" onClick={logout} className="btn-secondary">Logout</button> : <Link to="/register" className="btn-primary">Start Writing</Link>}
+            {user ? <button type="button" onClick={handleLogout} className="btn-secondary">Logout</button> : <Link to="/register" className="btn-primary">Start Writing</Link>}
           </div>
         </div>
       )}
