@@ -12,7 +12,7 @@ DevConnect is a premium, developer-focused MERN Stack blogging platform inspired
 * **Duration:** 8 Weeks
 * **Domain:** Full Stack Web Development
 * **Live Application:** [https://dev-connect-blush.vercel.app](https://dev-connect-blush.vercel.app)
-* **GitHub Repository:** [https://github.com/sunnysuhas/DevConnect](https://github.com/sunnysuhas/DevConnect)
+* **GitHub Repository:** [https://github.com/Pranavipranavi/DevConnect](https://github.com/Pranavipranavi/DevConnect)
 
 ---
 
