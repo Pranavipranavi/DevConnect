@@ -7,8 +7,8 @@ DevConnect is a premium, developer-focused MERN Stack blogging platform inspired
 ## 🎓 Internship Submission Details
 
 * **Organization:** Codtech IT Solutions Private Limited
-* **Intern ID:** CITS1993
-* **Full Name:** Naguru Suhas
+* **Intern ID:** CITS1983
+* **Full Name:** Sai Pranavi
 * **Duration:** 8 Weeks
 * **Domain:** Full Stack Web Development
 * **Live Application:** [https://dev-connect-blush.vercel.app](https://dev-connect-blush.vercel.app)
