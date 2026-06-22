@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Documentation | DevConnect</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap');
+
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --surface: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+    }
+
+    /* Page Setup for Printing */
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+    }
+
+    /* Page Break Rules */
+    .page {
+      page-break-after: always;
+      break-after: page;
+      position: relative;
+      min-height: 250mm;
+      padding-top: 10mm;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* Cover Page styling */
+    .cover-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      height: 260mm;
+      padding: 30mm 10mm;
+    }
+
+    .org-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .project-title-container {
+      margin: auto 0;
+    }
+
+    .project-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    .project-subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .intern-details {
+      width: 100%;
+      max-width: 500px;
+      margin: 50px auto 0;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      text-align: left;
+    }
+
+    .intern-details h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .detail-row span:first-child {
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .detail-row span:last-child {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Headings */
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: justify;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Code Block & Tables */
+    pre, code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      background: #f1f5f9;
+      color: #0f172a;
+      border-radius: 6px;
+    }
+
+    pre {
+      padding: 15px;
+      overflow-x: auto;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 20px;
+    }
+
+    code {
+      padding: 2px 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    /* Images */
+    .screenshot-img {
+      width: 100%;
+      max-height: 110mm;
+      object-fit: contain;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      margin-bottom: 10px;
+    }
+
+    .screenshot-container {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .screenshot-caption {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    /* Header & Footer margins in PDF */
+    .footer-note {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COVER PAGE -->
+  <div class="page">
+    <div class="cover-page">
+      <div class="org-name">Codtech IT Solutions Private Limited</div>
+      
+      <div class="project-title-container">
+        <h1 class="project-title" style="border-bottom: none; margin-bottom: 10px;">DevConnect</h1>
+        <div class="project-subtitle">A Premium Full-Stack MERN blogging platform with secure JWT and Google OAuth authentication, role-based controls, dashboard analytics, and media integration.</div>
+      </div>
+      
+      <div class="intern-details">
+        <h3>Internship Details</h3>
+        <div class="detail-row">
+          <span>Full Name:</span>
+          <span>Naguru Suhas</span>
+        </div>
+        <div class="detail-row">
+          <span>Intern ID:</span>
+          <span>CITS1993</span>
+        </div>
+        <div class="detail-row">
+          <span>Domain:</span>
+          <span>Full Stack Web Development</span>
+        </div>
+        <div class="detail-row">
+          <span>Duration:</span>
+          <span>8 Weeks</span>
+        </div>
+        <div class="detail-row">
+          <span>Project Name:</span>
+          <span>DevConnect Blog Platform</span>
+        </div>
+      </div>
+      <div class="footer-note" style="border: none;">Codtech IT Solutions Private Limited &copy; 2026</div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: OBJECTIVES & ABSTRACT -->
+  <div class="page">
+    <h1>1. Project Abstract & Objectives</h1>
+    
+    <h2>Project Abstract</h2>
+    <p>
+      In the modern tech ecosystem, developers require a dedicated platform to write, read, and share industry insights. 
+      <strong>DevConnect</strong> is a high-performance blogging application designed specifically for developer communities. 
+      Built using the MERN (MongoDB, Express, React, Node.js) stack, it provides a feature-rich, scalable, and responsive ecosystem. 
+      DevConnect incorporates industry-standard security features like JSON Web Tokens (JWT), double-salted password hashing, 
+      input sanitization, and query validation. 
+    </p>
+    <p>
+      Users can easily register accounts, log in persistently, compose articles using a premium Rich Text editor (Quill), 
+      and manage their drafts and published posts. Social features such as nested comments, likes, and bookmarks encourage 
+      active discussions. Image assets (avatars and blog cover images) are directly managed via Cloudinary integration 
+      for optimal CDN-based delivery. An advanced role-based administration panel provides deep analytics, user management, 
+      and blog moderation controls to enforce community guidelines.
+    </p>
+    
+    <h2>Project Objectives</h2>
+    <ul>
+      <li><strong>Robust Authentication:</strong> Deliver dual-layered authentication (JWT-based custom email/password flow alongside Google One-Tap integration) and maintain sessions persistently.</li>
+      <li><strong>Responsive Developer UI:</strong> Build a highly responsive, modern interface using Tailwind CSS and Framer Motion, supporting premium dark mode and fast page transitions.</li>
+      <li><strong>Optimized Media Processing:</strong> Enable direct file uploads for avatars and post cover images with secure cloud storage mapping via Cloudinary.</li>
+      <li><strong>Role-Based Access Control (RBAC):</strong> Standardize guest, user, and admin roles. Secure endpoints globally and expose moderation facilities to administrators.</li>
+      <li><strong>Engagement Metrics:</strong> Record post analytics, including views, bookmarks, likes, and comments, and visualize them on user and admin dashboards.</li>
+    </ul>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 3: TECH STACK & SYSTEM ARCHITECTURE -->
+  <div class="page">
+    <h1>2. Technology Stack & System Architecture</h1>
+    
+    <h2>Technology Stack</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Technology</th>
+          <th>Purpose & Implementation Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Frontend</strong></td>
+          <td>React.js (v18)</td>
+          <td>Declarative component-based UI rendering, state management via Context API.</td>
+        </tr>
+        <tr>
+          <td><strong>CSS / Styling</strong></td>
+          <td>Tailwind CSS</td>
+          <td>Utility-first styles, responsive media queries, and transition utilities.</td>
+        </tr>
+        <tr>
+          <td><strong>Bundler / Build</strong></td>
+          <td>Vite (v8)</td>
+          <td>Fast HMR developer tooling and optimized production builds.</td>
+        </tr>
+        <tr>
+          <td><strong>Backend API</strong></td>
+          <td>Express.js & Node.js</td>
+          <td>RESTful routing, controller orchestration, and middleware pipelines.</td>
+        </tr>
+        <tr>
+          <td><strong>Database</strong></td>
+          <td>MongoDB Atlas</td>
+          <td>NoSQL document database storing users, posts, comments, likes, and bookmarks.</td>
+        </tr>
+        <tr>
+          <td><strong>Media Storage</strong></td>
+          <td>Cloudinary API</td>
+          <td>On-demand image upload, optimization, and responsive CDN asset delivery.</td>
+        </tr>
+        <tr>
+          <td><strong>Security</strong></td>
+          <td>Helmet, Express-Rate-Limit</td>
+          <td>Headers protection, rate-limiting, and XSS sanitization.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>System Architecture</h2>
+    <p>
+      DevConnect employs a decoupled Client-Server architecture. The frontend application is a Single Page Application (SPA) 
+      which makes HTTP requests to a RESTful API backend. Authentication is stateless, managed using JWT stored in the browser's 
+      localStorage, which is attached to the headers of authorized requests.
+    </p>
+    <pre>
++-------------------------------------------------------------+
+|                      Client (React SPA)                      |
+|  - Pages: Home, Explore, Profile, Dashboard, Admin          |
+|  - Contexts: AuthContext, ThemeContext                       |
++-------------------------------------------------------------+
+                               |
+                   HTTP API Requests (Axios)
+                               |
+                               v
++-------------------------------------------------------------+
+|                      Backend (Express API)                  |
+|  - Middlewares: Protect Auth, Admin check, Rate-Limiter     |
+|  - Controllers: Auth, Post, User, Comment, Admin, Bookmark  |
++-------------------------------------------------------------+
+           /                   |                       \
+          /                    |                        \
+         v                     v                         v
++----------------+   +--------------------+   +-------------------+
+|  MongoDB Atlas |   |   Cloudinary CDN   |   | Google OAuth API  |
+|  - User/Post   |   |  - Avatars         |   |  - Credential     |
+|  - Likes/Comm  |   |  - Cover images    |   |    Verification   |
++----------------+   +--------------------+   +-------------------+
+    </pre>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 4: FOLDER STRUCTURE & DATABASE DESIGN -->
+  <div class="page">
+    <h1>3. Repository Structure & Database Design</h1>
+    
+    <h2>Folder Structure</h2>
+    <p>
+      The project is neatly divided into <code>client/</code> and <code>server/</code> folders to cleanly isolate client-side assets 
+      from backend business logic.
+    </p>
+    <pre>
+devconnect/
+├── client/                     # React Frontend Application
+│   ├── src/
+│   │   ├── components/         # Reusable widgets (Navbar, Footer, BlogCard)
+│   │   ├── context/            # AuthContext and ThemeContext
+│   │   ├── layouts/            # Page shell (MainLayout, ProtectedRoutes)
+│   │   ├── pages/              # Routed pages (Home, Profile, Admin)
+│   │   ├── styles/             # Global CSS variables and fonts
+│   │   └── utils/              # Client helpers and formatters
+├── server/                     # Node.js / Express Backend
+│   ├── config/                 # Database and Cloudinary connection configs
+│   ├── controllers/            # Request handlers (posts, auth, admin)
+│   ├── middleware/             # Authorization, role checking, error handling
+│   ├── models/                 # Mongoose schemas (User, Post, Comment, Like)
+│   ├── routes/                 # API route declarations
+│   ├── services/               # Data seeding and upload handlers
+│   └── utils/                  # Input sanitizers, slug generators
+├── screenshots/                # Application screen captures
+└── output-images/              # Action success representations
+    </pre>
+
+    <h2>Database Design</h2>
+    <p>
+      DevConnect uses MongoDB Mongoose modeling with references to manage relationships.
+    </p>
+    <ul>
+      <li><strong>User Schema:</strong> Stores credentials, name, email (unique), hashed password (select: false for safety), profile avatar URL, bio, social links, and lists of follower/following user IDs.</li>
+      <li><strong>Post Schema:</strong> Stores title, slug, content (sanitized HTML), coverImage, category, tags, author (referenced ObjectId of User), likes counter, views counter, status (published/draft), and readingTime.</li>
+      <li><strong>Comment Schema:</strong> Stores postId, userId, parentId (for nested replies support), and comment text.</li>
+      <li><strong>Like Schema:</strong> Enforces uniqueness per user/post pairing via composite compound indexes.</li>
+      <li><strong>Bookmark Schema:</strong> Maps saved posts directly to specific user accounts.</li>
+    </ul>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 5: API DESIGN & AUTHENTICATION FLOW -->
+  <div class="page">
+    <h1>4. API Design & Authentication Flow</h1>
+    
+    <h2>API Design</h2>
+    <p>
+      All backend endpoints reside under the <code>/api</code> prefix and return payload-structured JSON responses.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Access</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>POST</code></td>
+          <td>`/api/auth/register`</td>
+          <td>Public</td>
+          <td>Registers a new developer account. Checks for email duplicates.</td>
+        </tr>
+        <tr>
+          <td><code>POST</code></td>
+          <td>`/api/auth/login`</td>
+          <td>Public</td>
+          <td>Authenticates credentials and returns a JWT session token.</td>
+        </tr>
+        <tr>
+          <td><code>POST</code></td>
+          <td>`/api/auth/google`</td>
+          <td>Public</td>
+          <td>Verifies Google OAuth tokens and registers/logs in the user.</td>
+        </tr>
+        <tr>
+          <td><code>GET</code></td>
+          <td>`/api/posts`</td>
+          <td>Public</td>
+          <td>Retrieves posts list with support for search, category, and sorting.</td>
+        </tr>
+        <tr>
+          <td><code>POST</code></td>
+          <td>`/api/posts`</td>
+          <td>User</td>
+          <td>Creates a new blog post. Processes cover image uploads.</td>
+        </tr>
+        <tr>
+          <td><code>POST</code></td>
+          <td>`/api/comments`</td>
+          <td>User</td>
+          <td>Adds comments/nested replies under specific post IDs.</td>
+        </tr>
+        <tr>
+          <td><code>GET</code></td>
+          <td>`/api/admin/analytics`</td>
+          <td>Admin</td>
+          <td>Aggregates platform statistics for total users, blogs, and views.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Authentication Flow</h2>
+    <p>
+      DevConnect secures all sensitive endpoints using stateless token-based authorization:
+    </p>
+    <ol>
+      <li><strong>Credential Check:</strong> On user login, the server compares the password using <code>bcrypt.compare()</code>.</li>
+      <li><strong>JWT Generation:</strong> If correct, the server generates a token signed using a secure <code>JWT_SECRET</code>.</li>
+      <li><strong>Session Storage:</strong> The client stores the token in <code>localStorage</code>.</li>
+      <li><strong>Authorization Header:</strong> For subsequent requests to protected routes, the Axios instance attaches the token to the header as: <code>Authorization: Bearer &lt;token&gt;</code>.</li>
+      <li><strong>Middleware Validation:</strong> The <code>protect</code> middleware intercepts the request, verifies the token signature, decodes the user payload, and injects the user object into <code>req.user</code>.</li>
+    </ol>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 6: SCREENSHOTS 1 -->
+  <div class="page">
+    <h1>5. Application Interfaces (Screenshots)</h1>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/homepage.png" class="screenshot-img" alt="Homepage">
+      <div class="screenshot-caption">Figure 5.1: DevConnect Homepage - Featuring modern layouts, recent blogs, and categories selection.</div>
+    </div>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/explore.png" class="screenshot-img" alt="Explore">
+      <div class="screenshot-caption">Figure 5.2: Explore Page - Enabling search filters, sorting, and tag selections.</div>
+    </div>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 7: SCREENSHOTS 2 -->
+  <div class="page">
+    <h1>6. Authentication & Blog Composition</h1>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/login.png" class="screenshot-img" alt="Login">
+      <div class="screenshot-caption">Figure 6.1: Secure login gate with validation alerts and Google Sign-In options.</div>
+    </div>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/create-blog.png" class="screenshot-img" alt="Create Blog">
+      <div class="screenshot-caption">Figure 6.2: Compose interface with Quill rich-text formatting, categories, tags, and cover upload.</div>
+    </div>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 8: SCREENSHOTS 3 -->
+  <div class="page">
+    <h1>7. User Dashboard & Blog Details</h1>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/dashboard.png" class="screenshot-img" alt="Dashboard">
+      <div class="screenshot-caption">Figure 7.1: User Dashboard - Summary statistics, draft managing facilities, and publishing triggers.</div>
+    </div>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/blog-details.png" class="screenshot-img" alt="Blog Details">
+      <div class="screenshot-caption">Figure 7.2: Blog Details View - Displaying responsive articles, nested comments, and social counters.</div>
+    </div>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 9: SCREENSHOTS 4 -->
+  <div class="page">
+    <h1>8. Administration & Responsive Layouts</h1>
+    
+    <div class="screenshot-container">
+      <img src="../screenshots/admin-dashboard.png" class="screenshot-img" alt="Admin Dashboard">
+      <div class="screenshot-caption">Figure 8.1: Admin Moderation Console - Allowing analytics tracking, user deletion, and comment moderation.</div>
+    </div>
+    
+    <div style="display: flex; gap: 15px;">
+      <div class="screenshot-container" style="flex: 1;">
+        <img src="../screenshots/mobile-responsive.png" class="screenshot-img" style="max-height: 90mm;" alt="Mobile View">
+        <div class="screenshot-caption">Figure 8.2: Mobile Responsive Layout.</div>
+      </div>
+      <div class="screenshot-container" style="flex: 1;">
+        <img src="../screenshots/dark-mode.png" class="screenshot-img" style="max-height: 90mm;" alt="Dark Mode">
+        <div class="screenshot-caption">Figure 8.3: Dark Mode View.</div>
+      </div>
+    </div>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 10: OUTPUT IMAGES -->
+  <div class="page">
+    <h1>9. Success Notifications & Action Feedback</h1>
+    <p>
+      The application features instant feedback mechanisms using Toast notifications to confirm server interactions.
+    </p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+      <div class="screenshot-container">
+        <img src="../output-images/registration-success.png" class="screenshot-img" style="max-height: 60mm;" alt="Reg Success">
+        <div class="screenshot-caption">Registration Success Toast</div>
+      </div>
+      <div class="screenshot-container">
+        <img src="../output-images/login-success.png" class="screenshot-img" style="max-height: 60mm;" alt="Login Success">
+        <div class="screenshot-caption">Login Success Toast</div>
+      </div>
+      <div class="screenshot-container">
+        <img src="../output-images/blog-publishing-success.png" class="screenshot-img" style="max-height: 60mm;" alt="Blog Success">
+        <div class="screenshot-caption">Blog Publishing Success</div>
+      </div>
+      <div class="screenshot-container">
+        <img src="../output-images/profile-updated.png" class="screenshot-img" style="max-height: 60mm;" alt="Profile Update">
+        <div class="screenshot-caption">Profile Update Success</div>
+      </div>
+    </div>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 11: DEPLOYMENT & DEPLOYMENT ARCHITECTURE -->
+  <div class="page">
+    <h1>10. Deployment Architecture & Operations</h1>
+    
+    <h2>Deployment Architecture</h2>
+    <p>
+      DevConnect is deployed globally to provide low-latency access and secure data storage:
+    </p>
+    <ul>
+      <li><strong>Frontend Host:</strong> Vercel (CDN-edge distribution, sub-second responses, serverless routing for standard headers).</li>
+      <li><strong>Backend Host:</strong> Render Web Service (Node.js engine, continuous integration via GitHub hooks, persistent environment variable injection).</li>
+      <li><strong>Database Cluster:</strong> MongoDB Atlas (managed replica sets, automated IP whitelisting rules, secure SSL/TLS connection tunnels).</li>
+      <li><strong>Media CDN:</strong> Cloudinary Cloud storage (automatic optimization, dynamic cropping support, globally cached resources).</li>
+    </ul>
+
+    <h2>Environmental Configuration</h2>
+    <p>
+      Both frontend and backend are configured using decoupled environment variables. On deployment platforms, these are injected 
+      securely via dashboard setting panels, ensuring no credentials or secrets are committed to the public Git repository.
+    </p>
+    <pre>
+# Backend Config (Render Dashboard)
+NODE_ENV=production
+MONGO_URI=mongodb+srv://<db-user>:<db-password>@cluster0.mongodb.net/prod
+JWT_SECRET=secure-production-random-hash
+JWT_EXPIRES_IN=7d
+CLIENT_URL=https://dev-connect-blush.vercel.app
+CLOUDINARY_CLOUD_NAME=dbnf8tmdx
+CLOUDINARY_API_KEY=****************
+CLOUDINARY_API_SECRET=****************
+
+# Frontend Config (Vercel Dashboard)
+VITE_API_URL=https://devconnect-backend.onrender.com/api
+VITE_GOOGLE_CLIENT_ID=871812217407-****************
+    </pre>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+  <!-- PAGE 12: CHALLENGES & CONCLUSION -->
+  <div class="page">
+    <h1>11. Challenges Faced, Future Upgrades, & Conclusion</h1>
+    
+    <h2>Challenges Faced</h2>
+    <ul>
+      <li><strong>Cloudinary Integration:</strong> Managing direct uploads of cover images and avatars dynamically on serverless hosting requires proper CORS headers. Handled by creating specific routing rules in Express and utilizing Multer storage structures on disk before uploading to the Cloudinary cloud.</li>
+      <li><strong>Stateless Authorization Security:</strong> Synchronizing authentication states across page reloads without exposing keys was resolved by storing tokens securely in localStorage and checking the validation endpoints (<code>/api/auth/me</code>) when mounting root components.</li>
+      <li><strong>MongoDB Referencing Performance:</strong> Querying related user, post, and comment schemas can lead to slow response times. Solved by implementing MongoDB indexing and using Mongoose <code>populate()</code> for efficient field joins.</li>
+    </ul>
+
+    <h2>Future Enhancements</h2>
+    <ol>
+      <li><strong>Markdown & Code Sandbox Integration:</strong> Allow users to render embedded code playgrounds directly inside their articles.</li>
+      <li><strong>Real-time Notifications:</strong> Incorporate Socket.io to deliver notifications for likes, follows, and replies instantly.</li>
+      <li><strong>Enhanced SEO Crawling:</strong> Implement Server-Side Rendering (SSR) via Next.js to parse meta tags dynamically for social sharing previews.</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>
+      The <strong>DevConnect</strong> project represents a complete, secure, and production-grade implementation of a MERN Stack blogging application. 
+      Over the 8-week development course, Naguru Suhas successfully engineered secure custom JWT flows, structured an optimized database schema, 
+      integrated cloud media management, and delivered an admin moderation console. The project follows best practices in software development, 
+      including RESTful API structures, clean folder separation, and deployment pipelines. The repository is fully prepared and optimized for final 
+      internship review and grading.
+    </p>
+    
+    <div class="footer-note">DevConnect Project Documentation | Naguru Suhas (CITS1993)</div>
+  </div>
+
+</body>
+</html>
